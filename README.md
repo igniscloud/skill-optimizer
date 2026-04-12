@@ -12,6 +12,18 @@ The core idea is:
 - model-specific fixes are written back into `additional/<model>.md`
 - shared fixes are pushed into the main skill or references
 
+The `reference/` directory is reserved for agent-framework-specific usage guides. Today it contains `opencode.md`. Later it can also include references for frameworks such as `openclaw`, `codex`, or `claude code`.
+
+## Installation
+
+Install the skill with `npx skills add`:
+
+```bash
+npx skills add https://github.com/igniscloud/skill-optimizer.git
+```
+
+If your environment prefers SSH, replace the repository URL accordingly.
+
 ## Repository Layout
 
 ```text
@@ -39,7 +51,7 @@ The core idea is:
 ## Current Skill Files
 
 - [skills/skill-optimizer/SKILL.md](./skills/skill-optimizer/SKILL.md): main workflow for optimizing a skill on weaker models
-- [skills/skill-optimizer/reference/opencode.md](./skills/skill-optimizer/reference/opencode.md): OpenCode execution, isolation, and trace-analysis reference
+- [skills/skill-optimizer/reference/opencode.md](./skills/skill-optimizer/reference/opencode.md): current OpenCode-specific execution, isolation, and trace-analysis reference
 
 ## Intended Workflow
 

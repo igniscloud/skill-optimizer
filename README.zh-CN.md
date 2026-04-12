@@ -12,6 +12,18 @@
 - 把模型特有的失败模式写回 `additional/<model>.md`
 - 把所有模型共享的问题回收到主 skill 或 reference
 
+`reference/` 目录用于存放不同 agent 框架的使用方式。当前只有 `opencode.md`，后续可以继续增加 `openclaw`、`codex`、`claude code` 等框架的参考文档。
+
+## 安装方式
+
+使用 `npx skills add` 安装：
+
+```bash
+npx skills add https://github.com/igniscloud/skill-optimizer.git
+```
+
+如果你的环境更适合 SSH，也可以替换成对应的仓库地址。
+
 ## 仓库结构
 
 ```text
@@ -39,7 +51,7 @@
 ## 当前关键文件
 
 - [skills/skill-optimizer/SKILL.md](./skills/skill-optimizer/SKILL.md)：优化弱模型执行表现的主流程
-- [skills/skill-optimizer/reference/opencode.md](./skills/skill-optimizer/reference/opencode.md)：OpenCode 运行、隔离和 trace 分析参考
+- [skills/skill-optimizer/reference/opencode.md](./skills/skill-optimizer/reference/opencode.md)：当前 OpenCode 专用的运行、隔离和 trace 分析参考
 
 ## 预期工作流
 
